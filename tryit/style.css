@@ -1,0 +1,310 @@
+* {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+.flex,
+.center,
+.align,
+.start,
+.end,
+.selfStart,
+.selfEnd,
+.justify,
+.around,
+.between,
+.base,
+.justStart,
+.justEnd,
+.col,
+.row,
+.wrap,
+.noWrap {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.align {
+  align-items: center;
+}
+
+.start {
+  align-items: flex-start;
+}
+
+.end {
+  align-items: flex-end;
+}
+
+.selfStart {
+  align-self: flex-start;
+}
+
+.selfEnd {
+  align-self: flex-end;
+}
+
+.justify {
+  justify-content: center;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+.even {
+  justify-content: space-evenly;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.base {
+  justify-content: baseline;
+}
+
+.justStart {
+  justify-content: flex-start;
+}
+
+.justEnd {
+  justify-content: flex-end;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.noWrap {
+  flex-wrap: nowrap;
+}
+
+header {
+  background-color: #f5f9fc;
+  height: 4.7rem;
+  width: 100%;
+  color: #2d4357;
+  padding: 0 2rem;
+}
+
+header li,
+header a {
+  list-style: none;
+  text-decoration: none;
+  color: #2d4357;
+  font-size: 1.6rem;
+  min-width: max-content;
+}
+
+header button {
+  color: white;
+  background-color: #2d4357;
+  border: none;
+  padding: 4px 20px;
+  font-size: 1.5rem;
+}
+
+nav {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+#sourceLogo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.linkSection a {
+  margin-right: 2rem;
+  font-weight: 400;
+}
+
+.linkSection {
+  padding: 0 2rem;
+}
+
+.nav2 {
+  display: none;
+  width: 100%;
+}
+
+.nav2 img {
+  display: none;
+}
+
+#sourceLogo2 {
+  display: none;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+
+.firstSection {
+  width: 100%;
+  height: 75vh;
+  background-color: #f5f9fc;
+  color: #2d4357;
+}
+
+.firstLeft {
+  width: 50%;
+  flex-wrap: nowrap;
+  margin-left: 5%;
+}
+
+.firstSection h4 {
+  margin-bottom: 1rem;
+  color: #6c87a0;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.firstSection h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  min-width: max-content;
+}
+
+.firstSection input {
+  padding: 10px 10% 10px 9px;
+  background-color: #e1e9f0;
+  color: #91a3b2;
+  border: none;
+  font-size: 1rem;
+}
+
+.firstSection button {
+  color: white;
+  background-color: #2d4357;
+  border: none;
+  padding: 6px 20px;
+  font-size: 1rem;
+  margin-right: 5px;
+  z-index: 1;
+}
+
+.firstSection img {
+  z-index: -1;
+}
+
+.secondSection {
+  width: 100%;
+  height: auto;
+  background-color: #f5f9fc;
+  color: #2d4357;
+  padding: 2rem;
+}
+
+.secondSection i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.secondSection h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.secondSection p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.secondSection a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #2d4357;
+}
+
+.secondSection a > i {
+  font-size: 1.5rem;
+}
+
+.thirdSection {
+  padding: 5rem;
+}
+
+.thirdSection h2 {
+  font-size: 3rem;
+  color: #2d4357;
+  margin-bottom: 1rem;
+}
+
+.thirdSection p {
+  font-size: 1.5rem;
+  color: #7c95ad;
+  margin-bottom: 1.5rem;
+}
+
+.thirdSection span {
+  background-color: #bacbdb;
+  height: 200px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .firstLeft {
+    margin-left: 0;
+  }
+
+  .firstSection h2 {
+    font-size: 2rem;
+  }
+
+  .firstSection input {
+    padding: 10px 5% 10px 4px;
+    font-size: 1rem;
+  }
+
+  .firstSection button {
+    font-size: 1rem;
+  }
+
+  .secondSection h3,
+  .secondSection p,
+  .secondSection a {
+    font-size: 1rem;
+  }
+
+  .thirdSection {
+    padding: 2rem;
+  }
+
+  .thirdSection h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .thirdSection p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .thirdSection span {
+    height: 100px;
+  }
+}
+
